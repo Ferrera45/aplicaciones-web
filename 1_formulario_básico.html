@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <tittle>Formulario básico</tittle>
+</head>
+
+<body>
+    <h2>Formulario básico</h2>
+
+    <form action="mailto:aaron.ferrera@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Datos obligatorios</legend>
+        <label>Nombre:</label>
+        <input type="text" name="username" value="" placeholder="aaron">
+
+        <br>
+        <br>
+
+        <label>Contraseña:</label>
+        <input name="password" type="password" />
+
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+        <legend>Datos opcionales</legend>
+        <label>Edad:</label>
+        <input name="Edad" type="number" />
+
+        <br>
+        <br>
+        <label>Color favorito:</label>
+        <input name="color" type="color" />
+
+        <br>
+        <br>
+
+        </fieldset>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar todo" />
+    </form>
+</body>
+</html>
