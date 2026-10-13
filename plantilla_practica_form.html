@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <tittle>Formulario básico</tittle>
+    <title>Formulario básico</title>
 </head>
 
 <body>
@@ -11,35 +11,36 @@
     <form action="mailto:aaron.ferrera@educa.madrid.org" method="post">
         <fieldset>
             <legend>Personaje</legend>
-        <label>Superhéroe favorito:</label>
-        <input type="text" name="username" value="" placeholder="">
+            <label>Superhéroe favorito:</label>
+            <input list="superheroes" name="superheroe" placeholder="elige superheroe" />
+            <datalist id="superheroes">
+                <option label="Iron Man" value="Iron_Man"></option>
+                <option label="Hulk" value="Hulk"></option>
+            </datalist>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <label>Color:</label>
-        <input name="color" type="color" />
+            <label>Color:</label>
+            <input name="color" type="color" />
 
-        <br>
-        <br>
+            <br>
+            <br>
         </fieldset>
         <fieldset>
-        <legend>Datos de usuario</legend>
-         <label>Nombre:</label>
-        <input type="text" name="username" value="" placeholder="aaron">
-
-        <br>
-        <br>
-
-        <label>Teléfono</label>
-        <input type="tel" />
-
-        <br>
-        <br>
+            <legend>Datos de usuario</legend>
+            <label>Nombre:</label>
+            <input type="text" name="username" value="" placeholder="Nombre">
+            <br>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="1234567" pattern="[0-9]{7}" maxlength="7" required>
+            <br>
+            <br>
 
         </fieldset>
         <input type="submit" value="Enviar" />
-        <input type="reset" value="Borrar todo" />
     </form>
 </body>
+
 </html>
